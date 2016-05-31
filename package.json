@@ -1,0 +1,51 @@
+{
+  "name": "grief-official-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "start": "node --harmony index.js",
+    "build:prod": "gulp --type production",
+    "start:prod": "NODE_ENV=production node --harmony index.js | bunyan",
+    "upload": "cd dist && scp -r ./* ubuntu@123.59.78.181:/usr/share/nginx/html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.captain.bengjiujie.com:1022/bengjiujie3/grief-official-website.git"
+  },
+  "author": "bowen",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "bunyan": "^1.8.0",
+    "del": "^2.2.0",
+    "flightplan": "^0.6.13",
+    "font-awesome": "^4.5.0",
+    "gulp": "^3.9.1",
+    "gulp-banner": "^0.1.3",
+    "gulp-cache": "^0.4.3",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-inject": "^4.0.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.4.5",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "jquery": "^2.2.2",
+    "koa": "^1.2.0",
+    "koa-static": "^2.0.0",
+    "koa-static-server": "^0.1.8",
+    "object-assign": "^4.0.1",
+    "stream-series": "^0.1.1"
+  }
+}

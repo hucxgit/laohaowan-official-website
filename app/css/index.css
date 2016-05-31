@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-width: 1280px;
+  text-align: center;
+  color: #B88A78;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.page {
+  height: 100%;
+  background: url('../image/desktop_bg.jpg') center top no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#download {
+  padding-top: 50px;
+}
+
+#download dt {
+  font-size: 20px;
+  position: relative;
+  width: 160px;
+  margin: 0 auto;
+}
+
+#download dt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  color: transparent;
+  height: 22px;
+  width: 16px;
+  background-image: url("../image/mobile_icon.png");
+  background-size: cover;
+}
+
+#download .download-platform-wrap {
+  overflow: hidden;
+  width: 33%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#download .android, #download .iPhone{
+  font-size: 28px;
+  width: 42%;
+  line-height: 55px;
+  border: solid 1px #B88A78;
+  border-radius: 27px;
+  position: relative;
+  cursor: pointer;
+  transition: all .8s;
+  text-align: left;
+}
+
+#download .android .fa, #download .iPhone .fa{
+  margin-left: 20px;
+}
+
+#download .android:hover, #download .iPhone:hover {
+  color: #fff;
+  background-color: #B88A78;
+}
+
+#download .android:hover::before {
+  background-image: url("../image/android_white.png");
+}
+
+#download .iPhone:hover::before {
+  background-image: url("../image/apple_white.png");
+}
+
+
+/*#download .android::before, #download .iPhone::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin-top: -12px;
+  height: 22px;
+  width: 19px;
+}
+
+#download .android::before {
+  background-image: url("../image/android_icon.png");
+  background-size: cover;
+}
+
+#download .iPhone::before {
+  background-image: url("../image/apple_icon.png");
+  background-size: cover;
+}*/
+
+.slogen-image {
+  width: 30%;
+}
+
+#slogen {
+  margin-top: 20px;
+}
+
+#phone {
+  margin-top: 20px;
+}
+
+#phone img{
+  width: 28%;
+}

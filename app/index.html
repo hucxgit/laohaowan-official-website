@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>老好玩——每天来点“料” 生活不单调</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script>
+      var a = navigator.userAgent
+          ,b = a.toLowerCase().indexOf("android") > -1
+          ,c = a.toLowerCase().indexOf("iphone") > -1
+          ,d = a.toLowerCase().indexOf("ipad") > -1;
+      if (b || c || d) {
+        window.location.href = "/mobile.html";
+      }
+    </script>
+    <!-- vendorcss:css -->
+    <link rel="stylesheet" href="./css/font-awesome.css" />
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="./css/index.css"/>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="./js/libs.js" ></script>
+    <!-- endinject -->
+  </head>
+  <body>
+    <section class="page">
+      <dl id="download">
+        <dt>
+          &nbsp;app下载地址
+        </dt>
+        <dd>
+          <div class="download-platform-wrap">
+            <div class="left android"><i class="fa fa-android"></i>&nbsp;&nbsp;Android</div>
+            <div class="right iPhone"><i class="fa fa-apple"></i>&nbsp;&nbsp;iPhone</div>
+          </div>
+        </dd>
+      </dl>
+      <p id="slogen"><img src="./image/slogen_desk.png" class="slogen-image" /></p>
+      <p id="phone"><img src="./image/mobile.png"/></p>
+    </section>
+    <!-- bundle:js -->
+    <script src="/js/bundle.js"></script>
+    <!-- endinject -->
+  </body>
+</html>
